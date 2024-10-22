@@ -1,0 +1,26 @@
+<div class="bg-gray-100 h-[100vh]">
+    <!-- Navbar -->
+<nav class="bg-blue-500 p-4">
+    <div class="container mx-auto flex items-center justify-between">
+        <!-- Brand Logo -->
+        <a href="#" class="text-white text-lg font-semibold">
+            Crickey
+        </a>
+
+        <!-- Navigation Menus -->
+        <div class="flex space-x-4">
+            <a [routerLink]="'/live'"  class="text-white cursor-pointer hover:underline">Live Score</a>
+            <a [routerLink]="'/all-matches'"  class="text-white cursor-pointer hover:underline">History</a>
+            <a routerLink="/point-table"  class="text-white cursor-pointer hover:underline">CWC2024 Point Table</a>
+            <a routerLink="/"  class="text-white cursor-pointer hover:underline">Home</a>
+        </div>
+        <div></div>
+    </div>
+</nav>
+<div class="container mx-auto px-16">
+
+
+<router-outlet></router-outlet>
+</div>
+
+</div>
